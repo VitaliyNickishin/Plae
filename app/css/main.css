@@ -1,0 +1,20 @@
+/*Specification*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+p, h1, h5 {
+  margin: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a6ac; }
+
+input {
+  outline: none;
+  border-top: 0; }
+
+/* 961 - 1368 px */
