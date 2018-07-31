@@ -2,33 +2,34 @@
 //@import "fontello" //иконки с fontello
 
 /*Specification*/
+*
+ margin: 0
+ padding: 0
+ box-sizing: border-box
 
 ul
-	padding: 0
-	margin: 0
 	list-style: none
-
-p, h1, h5
-	margin: 0
 
 body
  font-family: 'Yantramanav', sans-serif
  font-size: 16px
  font-weight: 300
- margin: 0
- padding: 0
+ color: $body-text
+
 input, button
  outline: none
  border: 0
+
+.stanrdart
+	max-width: 1280px
+	height: 800px
+ position: relative
+ margin: 0 auto
 
 
 /*Intro*/
 .intro
 	background: url(../img/stool.jpg) no-repeat center
-	max-width: 1280px
-	height: 800px
- position: relative
- margin: 0 auto
 	&-logo
 		display: block
 		position: absolute
@@ -56,7 +57,7 @@ input, button
 		height: 48px
 	 input 
 	  padding-left: 28px
-	  width: 282px
+	  width: 310px
 	  border-radius: 30px 0 0 30px
    font-size: 18px
    background: $menu-text
@@ -93,11 +94,29 @@ input, button
     display: block
     text-decoration: none
     
-
-
-
-
-
+/*About*/
+.about
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ //justify-content: space-between
+ flex-direction: row
+ &-content
+ 	flex: 2
+  h2
+  	font-family: 'Nunito', sans-serif
+   font-size: 30px
+   text-align: center
+   margin: 110px 0 35px
+   display: block
+  p
+   margin: 0 0 30px 105px
+   max-width: 412px
+   text-align: left
+ img
+  flex: 2
 
 
 

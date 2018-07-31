@@ -1,30 +1,32 @@
 /*Specification*/
-ul {
-  padding: 0;
+* {
   margin: 0;
-  list-style: none; }
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-p, h1, h5 {
-  margin: 0; }
+ul {
+  list-style: none; }
 
 body {
   font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  margin: 0;
-  padding: 0; }
+  color: #000; }
 
 input, button {
   outline: none;
   border: 0; }
 
-/*Intro*/
-.intro {
-  background: url(../img/stool.jpg) no-repeat center;
+.stanrdart {
   max-width: 1280px;
   height: 800px;
   position: relative;
   margin: 0 auto; }
+
+/*Intro*/
+.intro {
+  background: url(../img/stool.jpg) no-repeat center; }
   .intro-logo {
     display: block;
     position: absolute;
@@ -52,7 +54,7 @@ input, button {
     height: 48px; }
     .intro-form input {
       padding-left: 28px;
-      width: 282px;
+      width: 310px;
       -webkit-border-radius: 30px 0 0 30px;
               border-radius: 30px 0 0 30px;
       font-size: 18px;
@@ -93,4 +95,53 @@ input, button {
         display: block;
         text-decoration: none; }
 
+/*About*/
+.about {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .about-content {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+    .about-content h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 30px;
+      text-align: center;
+      margin: 110px 0 35px;
+      display: block; }
+    .about-content p {
+      margin: 0 0 30px 105px;
+      max-width: 412px;
+      text-align: left; }
+  .about img {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+
 /* 961 - 1368 px */
+@media screen and (max-width: 1250px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about-content {
+      text-align: center; }
+      .about-content p {
+        margin: 30px auto; }
+    .about img {
+      margin: 0 auto;
+      max-width: 640px; } }
