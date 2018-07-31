@@ -2,43 +2,137 @@
 //@import "fontello" //иконки с fontello
 
 /*Specification*/
+*
+ margin: 0
+ padding: 0
+ box-sizing: border-box
 
 ul
-	padding: 0
-	margin: 0
 	list-style: none
 
-p, h1, h5
-	margin: 0
-
 body
- font-family: 'Open Sans', sans-serif
+ font-family: 'Yantramanav', sans-serif
  font-size: 16px
- font-weight: 400
+ font-weight: 300
  color: $body-text
 
-input
+input, button
  outline: none
- border-top: 0
+ border: 0
+
+.stanrdart
+	max-width: 1280px
+	height: 800px
+ position: relative
+ margin: 0 auto
+
+.title
+ font-family: 'Nunito', sans-serif
+ font-size: 30px
+ text-align: center
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Intro*/
+.intro
+	background: url(../img/stool.jpg) no-repeat center
+	&-logo
+		display: block
+		position: absolute
+		top: 7%
+		margin-top: -28px
+		left: 9%
+		margin-left: -71px
+	&-main
+	 position: absolute
+	 top: 50%
+	 margin-top: -130px
+	 left: 50%
+	 margin-left: -290px
+	 color: $menu-text
+	 text-align: center
+	 max-width: 580px
+	 height: 260px
+	 &__title
+	  font-size: 60px
+	 p
+	 	margin-bottom: 55px
+	 	font-size: 20px
+	&-form
+		height: 48px
+	 input 
+	  padding-left: 28px
+	  width: 310px
+	  border-radius: 30px 0 0 30px
+   font-size: 18px
+   background: $menu-text
+   height: 100%
+  button
+  	font-family: 'Nunito', sans-serif
+  	font-size: 20px
+  	color: $menu-text
+  	background: $bg-button
+   width: 165px
+   text-align: center
+   height: 100%
+   border-radius: 0 30px 30px 0
+   margin-left: -5px
+   cursor: pointer
+ &-nav
+ 	position: absolute
+ 	top: 50%
+  right: 5%
+  width: 15px
+  height: 150px
+  text-align: center
+ 	li
+ 		width: 8px
+ 		height: 8px
+ 		border-radius: 50%
+ 		background: $bg-ellipse
+   margin-bottom: 15px
+   &:hover
+    	width: 12px
+ 		  height: 12px
+ 		  border-radius: 50%
+   a
+    display: block
+    text-decoration: none
+    
+/*About*/
+.about
+ display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ flex-direction: row
+ &-content
+ 	flex: 2
+  &__title
+   margin: 110px 0 35px
+  p
+   margin: 0 0 30px 105px
+   max-width: 412px
+   text-align: left
+ img
+  flex: 2
+  
+/*Reviews*/
+.reviews
+ @extend .about
+	img
+  flex: 2
+	&-content
+  flex: 2
+  text-align: center
+		&__title
+			margin: 190px 0 120px
+		&__quote
+			font-size: 20px
+			margin: 0 0 95px 165px
+			max-width: 332px
+		&__name
+   font-size: 18px
 
 
 
