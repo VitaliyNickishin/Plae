@@ -24,6 +24,11 @@ input, button {
   position: relative;
   margin: 0 auto; }
 
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+  text-align: center; }
+
 /*Intro*/
 .intro {
   background: url(../img/stool.jpg) no-repeat center; }
@@ -34,7 +39,7 @@ input, button {
     margin-top: -28px;
     left: 9%;
     margin-left: -71px; }
-  .intro-title {
+  .intro-main {
     position: absolute;
     top: 50%;
     margin-top: -130px;
@@ -44,10 +49,9 @@ input, button {
     text-align: center;
     max-width: 580px;
     height: 260px; }
-    .intro-title h1 {
-      font-family: 'Nunito', sans-serif;
+    .intro-main__title {
       font-size: 60px; }
-    .intro-title p {
+    .intro-main p {
       margin-bottom: 55px;
       font-size: 20px; }
   .intro-form {
@@ -96,7 +100,7 @@ input, button {
         text-decoration: none; }
 
 /*About*/
-.about {
+.about, .reviews {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -114,25 +118,43 @@ input, button {
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2; }
-    .about-content h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 30px;
-      text-align: center;
-      margin: 110px 0 35px;
-      display: block; }
+    .about-content__title {
+      margin: 110px 0 35px; }
     .about-content p {
       margin: 0 0 30px 105px;
       max-width: 412px;
       text-align: left; }
-  .about img {
+  .about img, .reviews img {
     -webkit-box-flex: 2;
     -webkit-flex: 2;
         -ms-flex: 2;
             flex: 2; }
 
+/*Reviews*/
+.reviews img {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2; }
+
+.reviews-content {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center; }
+  .reviews-content__title {
+    margin: 190px 0 120px; }
+  .reviews-content__quote {
+    font-size: 20px;
+    margin: 0 0 95px 165px;
+    max-width: 332px; }
+  .reviews-content__name {
+    font-size: 18px; }
+
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px) {
-  .about {
+  .about, .reviews {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -142,6 +164,25 @@ input, button {
       text-align: center; }
       .about-content p {
         margin: 30px auto; }
-    .about img {
+    .about img, .reviews img {
       margin: 0 auto;
-      max-width: 640px; } }
+      width: auto; }
+  .reviews img {
+    margin-top: 670px;
+    width: auto; }
+  .reviews-content__title {
+    margin: 80px 0 60px; }
+  .reviews-content__quote {
+    margin: 30px auto; } }
+
+@media screen and (max-width: 768px) {
+  .intro-logo {
+    left: 15%; }
+  .about-content__title {
+    margin-top: 55px; } }
+
+@media screen and (max-width: 320px) {
+  .about img, .reviews img {
+    max-width: 320px; }
+  .reviews img {
+    width: auto; } }

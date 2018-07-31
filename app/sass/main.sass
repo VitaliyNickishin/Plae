@@ -26,6 +26,11 @@ input, button
  position: relative
  margin: 0 auto
 
+.title
+ font-family: 'Nunito', sans-serif
+ font-size: 30px
+ text-align: center
+
 
 /*Intro*/
 .intro
@@ -37,7 +42,7 @@ input, button
 		margin-top: -28px
 		left: 9%
 		margin-left: -71px
-	&-title
+	&-main
 	 position: absolute
 	 top: 50%
 	 margin-top: -130px
@@ -47,8 +52,7 @@ input, button
 	 text-align: center
 	 max-width: 580px
 	 height: 260px
-	 h1
-	  font-family: 'Nunito', sans-serif
+	 &__title
 	  font-size: 60px
 	 p
 	 	margin-bottom: 55px
@@ -101,24 +105,34 @@ input, button
  display: -ms-flex
  display: -o-flex
  display: flex
- //justify-content: space-between
  flex-direction: row
  &-content
  	flex: 2
-  h2
-  	font-family: 'Nunito', sans-serif
-   font-size: 30px
-   text-align: center
+  &__title
    margin: 110px 0 35px
-   display: block
   p
    margin: 0 0 30px 105px
    max-width: 412px
    text-align: left
  img
   flex: 2
-
-
+  
+/*Reviews*/
+.reviews
+ @extend .about
+	img
+  flex: 2
+	&-content
+  flex: 2
+  text-align: center
+		&__title
+			margin: 190px 0 120px
+		&__quote
+			font-size: 20px
+			margin: 0 0 95px 165px
+			max-width: 332px
+		&__name
+   font-size: 18px
 
 
 
