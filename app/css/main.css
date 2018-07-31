@@ -8,13 +8,89 @@ p, h1, h5 {
   margin: 0; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  color: #a3a6ac; }
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
 
-input {
+input, button {
   outline: none;
-  border-top: 0; }
+  border: 0; }
+
+/*Intro*/
+.intro {
+  background: url(../img/stool.jpg) no-repeat center;
+  max-width: 1280px;
+  height: 800px;
+  position: relative;
+  margin: 0 auto; }
+  .intro-logo {
+    display: block;
+    position: absolute;
+    top: 7%;
+    margin-top: -28px;
+    left: 9%;
+    margin-left: -71px; }
+  .intro-title {
+    position: absolute;
+    top: 50%;
+    margin-top: -130px;
+    left: 50%;
+    margin-left: -290px;
+    color: #fff;
+    text-align: center;
+    max-width: 580px;
+    height: 260px; }
+    .intro-title h1 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 60px; }
+    .intro-title p {
+      margin-bottom: 55px;
+      font-size: 20px; }
+  .intro-form {
+    height: 48px; }
+    .intro-form input {
+      padding-left: 28px;
+      width: 282px;
+      -webkit-border-radius: 30px 0 0 30px;
+              border-radius: 30px 0 0 30px;
+      font-size: 18px;
+      background: #fff;
+      height: 100%; }
+    .intro-form button {
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      color: #fff;
+      background: #20ab50;
+      width: 165px;
+      text-align: center;
+      height: 100%;
+      -webkit-border-radius: 0 30px 30px 0;
+              border-radius: 0 30px 30px 0;
+      margin-left: -5px;
+      cursor: pointer; }
+  .intro-nav {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 15px;
+    height: 150px;
+    text-align: center; }
+    .intro-nav li {
+      width: 8px;
+      height: 8px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background: #dcdcdc;
+      margin-bottom: 15px; }
+      .intro-nav li:hover {
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .intro-nav li a {
+        display: block;
+        text-decoration: none; }
 
 /* 961 - 1368 px */
