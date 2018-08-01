@@ -100,7 +100,7 @@ input, button {
         display: block;
         text-decoration: none; }
 
-/*About*/
+/*About-2 section*/
 .about, .reviews, .drip {
   display: -webkit-flex;
   display: -moz-flex;
@@ -131,7 +131,7 @@ input, button {
         -ms-flex: 2;
             flex: 2; }
 
-/*Reviews*/
+/*Reviews-3 section*/
 .reviews img {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
@@ -153,7 +153,7 @@ input, button {
   .reviews-content__name {
     font-size: 18px; }
 
-/*Drip*/
+/*Drip-4 section*/
 .drip-content {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
@@ -172,6 +172,20 @@ input, button {
   -webkit-flex: 2;
       -ms-flex: 2;
           flex: 2; }
+
+/*Range-5 section*/
+.range-content {
+  margin: 80px 0 85px;
+  text-align: center; }
+  .range-content__text {
+    margin: 20px 0 135px;
+    font-size: 18px; }
+  .range-content__ty {
+    margin: 105px 0 25px;
+    font-size: 24px;
+    text-transform: uppercase; }
+  .range-content__position {
+    font-size: 18px; }
 
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px) {
@@ -211,17 +225,51 @@ input, button {
 @media screen and (max-width: 1024px) {
   .intro-logo {
     left: 11%; }
+  .about-content__title {
+    margin-top: 30px; }
+  .reviews-content__title {
+    margin: 30px 0 10px; }
   .drip img {
-    margin-top: 150px; } }
+    margin-top: 20px; } }
 
 @media screen and (max-width: 768px) {
   .intro-logo {
     left: 15%; }
-  .about-content__title {
-    margin-top: 55px; } }
+  .intro-nav li {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 320px) {
+  .intro-logo {
+    left: 50%; }
+  .intro-main {
+    top: 60%;
+    left: 88%; }
+    .intro-main__title {
+      font-size: 40px; }
+    .intro-main p {
+      margin-top: 15px;
+      font-size: 22px; }
+  .intro-form input {
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    margin-left: 8px; }
+  .intro-form button {
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    margin: 15px auto; }
+  .intro-nav {
+    top: 15%;
+    right: 50%; }
+    .intro-nav li {
+      width: 18px;
+      height: 18px;
+      margin-bottom: 25px; }
+  .about-content p {
+    text-align: center;
+    max-width: 300px; }
   .about img, .reviews img, .drip img {
     max-width: 320px; }
-  .reviews img {
-    width: auto; } }
+  .reviews-content__quote {
+    max-width: 300px; } }
