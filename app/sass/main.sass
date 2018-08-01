@@ -20,13 +20,13 @@ input, button
  outline: none
  border: 0
 
-.stanrdart
+.stanrdart /*общее для секций*/
 	max-width: 1280px
 	height: auto
  position: relative
  margin: 0 auto
 
-.title
+.title /*общее для заголовков*/
  font-family: 'Nunito', sans-serif
  font-size: 30px
  text-align: center
@@ -99,7 +99,7 @@ input, button
     display: block
     text-decoration: none
     
-/*About*/
+/*About-2 section*/
 .about
  display: -webkit-flex
  display: -moz-flex
@@ -118,7 +118,7 @@ input, button
  img
   flex: 2
   
-/*Reviews*/
+/*Reviews-3 section*/
 .reviews
  @extend .about
 	img
@@ -135,7 +135,7 @@ input, button
 		&__name
    font-size: 18px
 
-/*Drip*/
+/*Drip-4 section*/
 .drip
  @extend .about
 	&-content
@@ -150,7 +150,23 @@ input, button
  img
   flex: 2
 
-
+/*Range-5 section*/
+.range
+	&-content
+  margin: 80px 0 85px
+  text-align: center
+		&__title
+			
+		&__text
+   margin: 20px 0 135px
+   font-size: 18px
+  img
+  &__ty
+  	margin: 105px 0 25px
+  	font-size: 24px
+  	text-transform: uppercase
+  &__position
+  	font-size: 18px
 
 
 

@@ -45,35 +45,91 @@
  .about /*2 section*/
   &-content
    &__title
-    //margin-top: 55px
+    margin-top: 30px
+ 
+ .reviews /*3 section*/
+  &-content
+   &__title
+    margin: 30px 0 10px
  
  .drip /*4 section*/
   &-content
    &__quote
-
    &__name
   img
-   margin-top: 150px
+   margin-top: 20px
 
 @media screen and (max-width: 768px)
  .intro /*1 section*/
  	&-logo
  		left: 15%
- 
+  &-nav
+   li
+    width: 15px
+    height: 15px
+    margin-bottom: 20px
+
  .about /*2 section*/
   &-content
   	&__title
-  		margin-top: 55px
- 
+
  .reviews /*3 section*/
- 	img
- 		//margin-top: 20px
+ 	&-content
+   &__title
+
+ .drip /*4 section*/
+  &-content
+   &__quote
+   &__name
+  img
 
 @media screen and (max-width: 320px)
+ .intro
+  &-logo
+   left: 50%
+  &-main
+   top: 60%
+   left: 88%
+   &__title
+    font-size: 40px
+   p
+    margin-top: 15px 
+    font-size: 22px
+  &-form
+   input 
+    border-radius: 30px
+    margin-left: 8px
+   button
+    //margin-top: 15px
+    border-radius: 30px
+    margin: 15px auto
+  &-nav
+   top: 15%
+   right: 50%
+   li
+    width: 18px
+    height: 18px
+    margin-bottom: 25px
+
  .about /*2 section*/
- 	img
+  &-content
+   &__title
+   p
+    text-align: center
+    max-width: 300px
+  img
  		max-width: 320px
- 
+
  .reviews /*3 section*/
- 	img
- 		width: auto
+  &-content
+   &__title
+   &__quote
+    max-width: 300px
+  img  
+   
+
+ .drip /*4 section*/
+  &-content
+   &__quote
+   &__name
+  img
