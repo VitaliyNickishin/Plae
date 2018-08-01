@@ -22,7 +22,7 @@ input, button
 
 .stanrdart
 	max-width: 1280px
-	height: 800px
+	height: auto
  position: relative
  margin: 0 auto
 
@@ -35,6 +35,7 @@ input, button
 /*Intro*/
 .intro
 	background: url(../img/stool.jpg) no-repeat center
+	height: 800px
 	&-logo
 		display: block
 		position: absolute
@@ -134,8 +135,20 @@ input, button
 		&__name
    font-size: 18px
 
-
-
+/*Drip*/
+.drip
+ @extend .about
+	&-content
+  flex: 2
+  text-align: center
+		&__quote
+			font-size: 20px
+			margin: 315px 0 105px 185px
+			max-width: 265px
+		&__name
+   font-size: 18px
+ img
+  flex: 2
 
 
 
