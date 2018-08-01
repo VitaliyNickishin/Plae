@@ -1,42 +1,79 @@
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px)
- .about
+ .about /*2 section*/
   flex-direction: column
   &-content
   	text-align: center	
 	  &__title
+    margin-top: 55px
 	  p
 	   margin: 30px auto
   img
   	margin: 0 auto
   	//max-width: 640px
   	width: auto
- .reviews
+
+ .reviews /*3 section*/
+  flex-direction: column-reverse
   img
-  	margin-top: 670px
-  	width: auto
+  	margin-top: 30px
+   width: auto
   &-content
+   
   	&__title
   		margin: 80px 0 60px
   	&__quote
 	   margin: 30px auto
 
+ .drip /*4 section*/
+   &-content
+    &__quote
+     margin: 40px auto
+    &__name
+     margin-bottom: 20px
+   img
+    
+
+
+
+
+@media screen and (max-width: 1024px)
+ .intro /*1 section*/
+  &-logo
+   left: 11%
+ 
+ .about /*2 section*/
+  &-content
+   &__title
+    //margin-top: 55px
+ 
+ .drip /*4 section*/
+  &-content
+   &__quote
+
+   &__name
+  img
+   margin-top: 150px
+
 @media screen and (max-width: 768px)
- .intro
+ .intro /*1 section*/
  	&-logo
  		left: 15%
- .about
+ 
+ .about /*2 section*/
   &-content
   	&__title
   		margin-top: 55px
- .reviews
+ 
+ .reviews /*3 section*/
  	img
  		//margin-top: 20px
 
 @media screen and (max-width: 320px)
- .about
+ .about /*2 section*/
  	img
  		max-width: 320px
- .reviews
+ 
+ .reviews /*3 section*/
  	img
  		width: auto
