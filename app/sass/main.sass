@@ -31,6 +31,16 @@ input, button
  font-size: 30px
  text-align: center
 
+.boxes /*боксы для 6 section*/
+	width: 230px
+	background: $menu-text
+	padding: 10px
+	border-radius: 10px
+ &__title
+  font-size: 16px
+		font-weight: 400
+	&__text
+  font-size: 15px
 
 /*Intro*/
 .intro
@@ -167,6 +177,55 @@ input, button
   	text-transform: uppercase
   &__position
   	font-size: 18px
+
+/*why-6 section*/
+.why
+	background: #ecebec url(../img/blue.png) no-repeat center
+	height: 798px
+	&-content
+		&__title
+			padding: 75px 0 20px
+		&__text
+			text-align: center
+   font-size: 18px
+.boxes-left
+	position: absolute
+	left: 5%
+	top: 20%
+	&__item
+		//margin: 0 0 12px 60px
+		margin-bottom: 12px
+.boxes-right
+	position: absolute
+	right: 5%
+	top: 20%
+	&__item
+		margin-bottom: 12px
+
+.rounded
+	position: absolute
+	top: 25%
+	left: 25%
+	&__item
+  &_up
+			width: 15px
+			height: 15px
+			background: $bg-rounded
+	  border-radius: 50%
+  &_down
+			width: 23px
+			height: 23px
+			background: rgba(32, 171, 80, 0.5)
+			border-radius: 50%
+
+
+
+
+
+
+
+
+
 
 
 
