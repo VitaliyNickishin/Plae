@@ -29,6 +29,18 @@ input, button {
   font-size: 30px;
   text-align: center; }
 
+.boxes {
+  width: 230px;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+  .boxes__title {
+    font-size: 16px;
+    font-weight: 400; }
+  .boxes__text {
+    font-size: 15px; }
+
 /*Intro*/
 .intro {
   background: url(../img/stool.jpg) no-repeat center;
@@ -187,6 +199,47 @@ input, button {
   .range-content__position {
     font-size: 18px; }
 
+/*why-6 section*/
+.why {
+  background: #ecebec url(../img/blue.png) no-repeat center;
+  height: 798px; }
+  .why-content__title {
+    padding: 75px 0 20px; }
+  .why-content__text {
+    text-align: center;
+    font-size: 18px; }
+
+.boxes-left {
+  position: absolute;
+  left: 5%;
+  top: 20%; }
+  .boxes-left__item {
+    margin-bottom: 12px; }
+
+.boxes-right {
+  position: absolute;
+  right: 5%;
+  top: 20%; }
+  .boxes-right__item {
+    margin-bottom: 12px; }
+
+.rounded {
+  position: absolute;
+  top: 25%;
+  left: 25%; }
+  .rounded__item_up {
+    width: 15px;
+    height: 15px;
+    background: #20ab50;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .rounded__item_down {
+    width: 23px;
+    height: 23px;
+    background: rgba(32, 171, 80, 0.5);
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px) {
   .about, .reviews, .drip {
@@ -238,7 +291,13 @@ input, button {
   .intro-nav li {
     width: 15px;
     height: 15px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .range-content {
+    margin-top: 30px; }
+    .range-content__text {
+      margin-bottom: 70px; }
+    .range-content__ty {
+      margin-top: 50px; } }
 
 @media screen and (max-width: 320px) {
   .intro-logo {
@@ -272,4 +331,6 @@ input, button {
   .about img, .reviews img, .drip img {
     max-width: 320px; }
   .reviews-content__quote {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .range-content img {
+    max-width: 320px; } }
