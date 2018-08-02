@@ -42,6 +42,18 @@ input, button
 	&__text
   font-size: 15px
 
+.rounded
+	width: 15px
+	height: 15px
+	box-shadow: 0 0 0 4px rgba(32, 171, 80, 0.5)
+	background: $bg-rounded
+	border-radius: 50%
+ &_white
+ 	background: $menu-text
+ &_orange
+ 	box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8)
+
+
 /*Intro*/
 .intro
 	background: url(../img/stool.jpg) no-repeat center
@@ -179,44 +191,189 @@ input, button
   	font-size: 18px
 
 /*why-6 section*/
+
 .why
-	background: #ecebec url(../img/blue.png) no-repeat center
-	height: 798px
+ background: #ecebec url(../img/blue.png) no-repeat center
 	&-content
 		&__title
 			padding: 75px 0 20px
 		&__text
 			text-align: center
    font-size: 18px
-.boxes-left
-	position: absolute
-	left: 5%
-	top: 20%
+.boxes-wrap
+	display: -webkit-flex
+ display: -moz-flex
+ display: -ms-flex
+ display: -o-flex
+ display: flex
+ flex-direction: row
+.boxes-left  /*блок с левым контентом*/
+	flex: 1
+	z-index: 1 
 	&__item
-		//margin: 0 0 12px 60px
-		margin-bottom: 12px
-.boxes-right
-	position: absolute
-	right: 5%
-	top: 20%
-	&__item
-		margin-bottom: 12px
-
-.rounded
-	position: absolute
-	top: 25%
-	left: 25%
-	&__item
-  &_up
-			width: 15px
-			height: 15px
+		margin: 15px auto
+.boxes-rounded /*блок с кружками*/
+	flex: 2
+	position: relative
+	&__item-1 /*1-й круг*/
+		position: absolute
+		top: 120px
+		left: 40px
+		&:before /*вертикальная линия*/
+			content: ""
+			height: 70px
+			width: 1px
 			background: $bg-rounded
-	  border-radius: 50%
-  &_down
-			width: 23px
-			height: 23px
-			background: rgba(32, 171, 80, 0.5)
-			border-radius: 50%
+			position: absolute
+			top: -70px
+			left: 6px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 89px
+			background: $bg-rounded
+			position: absolute
+			top: -70px
+			left: -83px
+ &__item-2 /*2-й круг*/
+		position: absolute
+		top: 170px
+		left: 60px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 103px
+			background: $bg-rounded
+			position: absolute
+			top: 8px
+			left: -103px
+	&__item-3 /*3-й круг*/
+			position: absolute
+			top: 285px
+			left: 70px
+			&:after /*горизонтальная линия*/
+				content: ""
+				height: 1px
+				width: 113px
+				background: $bg-rounded
+				position: absolute
+				top: 8px
+				left: -113px
+ &__item-4 /*4-й круг*/
+		position: absolute
+		top: 445px
+		left: 200px
+		&:before /*вертикальная линия*/
+			content: ""
+			height: 45px
+			width: 1px
+			background: $menu-text
+			position: absolute
+			top: 15px
+			left: 7px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 250px
+			background: $bg-rounded
+			position: absolute
+			top: 60px
+			left: -243px
+ &__item-5 /*5-й круг*/
+		position: absolute
+		top: 120px
+		right: 283px
+		&:before /*вертикальная линия*/
+			content: ""
+			height: 75px
+			width: 1px
+			background: $bg-rounded
+			position: absolute
+			top: -75px
+			left: 6px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 335px
+			background: $menu-text
+			position: absolute
+			top: -75px
+			left: 6px
+ &__item-6 /*6-й круг*/
+		position: absolute
+		top: 205px
+		right: 230px
+		&:before /*вертикальная линия*/
+			content: ""
+			height: 75px
+			width: 1px
+			background: $menu-text
+			position: absolute
+			top: -75px
+			left: 6px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 335px
+			background: $menu-text
+			position: absolute
+			top: -75px
+			left: 6px
+ &__item-7 /*7-й круг*/
+		position: absolute
+		top: 225px
+		right: 60px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 335px
+			background: $menu-text
+			position: absolute
+			top: 7px
+			left: 6px
+ &__item-8 /*8-й круг*/
+		position: absolute
+		top: 305px
+		right: 130px
+		&:before /*вертикальная линия*/
+			content: ""
+			height: 51px
+			width: 1px
+			background: $menu-text
+			position: absolute
+			top: 15px
+			left: 7px
+		&:after /*горизонтальная линия*/
+			content: ""
+			height: 1px
+			width: 335px
+			background: $menu-text
+			position: absolute
+			top: 65px
+			left: 7px
+ &__item-9 /*9-й круг*/
+			position: absolute
+			bottom: 95px
+			left: 300px
+			&:after /*горизонтальная линия*/
+				content: ""
+				height: 1px
+				width: 373px
+				background: $bg-rounded
+				position: absolute
+				top: 8px
+				left: 5px
+
+
+
+.boxes-right /*блок с правым контентом*/
+	flex: 1
+	z-index: 1
+	&__item
+		margin: 15px auto
+
+
+  
 
 
 

@@ -41,6 +41,20 @@ input, button {
   .boxes__text {
     font-size: 15px; }
 
+.rounded {
+  width: 15px;
+  height: 15px;
+  -webkit-box-shadow: 0 0 0 4px rgba(32, 171, 80, 0.5);
+          box-shadow: 0 0 0 4px rgba(32, 171, 80, 0.5);
+  background: #20ab50;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .rounded_white {
+    background: #fff; }
+  .rounded_orange {
+    -webkit-box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8);
+            box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8); }
+
 /*Intro*/
 .intro {
   background: url(../img/stool.jpg) no-repeat center;
@@ -201,44 +215,199 @@ input, button {
 
 /*why-6 section*/
 .why {
-  background: #ecebec url(../img/blue.png) no-repeat center;
-  height: 798px; }
+  background: #ecebec url(../img/blue.png) no-repeat center; }
   .why-content__title {
     padding: 75px 0 20px; }
   .why-content__text {
     text-align: center;
     font-size: 18px; }
 
+.boxes-wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 .boxes-left {
-  position: absolute;
-  left: 5%;
-  top: 20%; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 1; }
   .boxes-left__item {
-    margin-bottom: 12px; }
+    margin: 15px auto; }
+
+.boxes-rounded {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  position: relative; }
+  .boxes-rounded__item-1 {
+    position: absolute;
+    top: 120px;
+    left: 40px; }
+    .boxes-rounded__item-1:before {
+      content: "";
+      height: 70px;
+      width: 1px;
+      background: #20ab50;
+      position: absolute;
+      top: -70px;
+      left: 6px; }
+    .boxes-rounded__item-1:after {
+      content: "";
+      height: 1px;
+      width: 89px;
+      background: #20ab50;
+      position: absolute;
+      top: -70px;
+      left: -83px; }
+  .boxes-rounded__item-2 {
+    position: absolute;
+    top: 170px;
+    left: 60px; }
+    .boxes-rounded__item-2:after {
+      content: "";
+      height: 1px;
+      width: 103px;
+      background: #20ab50;
+      position: absolute;
+      top: 8px;
+      left: -103px; }
+  .boxes-rounded__item-3 {
+    position: absolute;
+    top: 285px;
+    left: 70px; }
+    .boxes-rounded__item-3:after {
+      content: "";
+      height: 1px;
+      width: 113px;
+      background: #20ab50;
+      position: absolute;
+      top: 8px;
+      left: -113px; }
+  .boxes-rounded__item-4 {
+    position: absolute;
+    top: 445px;
+    left: 200px; }
+    .boxes-rounded__item-4:before {
+      content: "";
+      height: 45px;
+      width: 1px;
+      background: #fff;
+      position: absolute;
+      top: 15px;
+      left: 7px; }
+    .boxes-rounded__item-4:after {
+      content: "";
+      height: 1px;
+      width: 250px;
+      background: #20ab50;
+      position: absolute;
+      top: 60px;
+      left: -243px; }
+  .boxes-rounded__item-5 {
+    position: absolute;
+    top: 120px;
+    right: 283px; }
+    .boxes-rounded__item-5:before {
+      content: "";
+      height: 75px;
+      width: 1px;
+      background: #20ab50;
+      position: absolute;
+      top: -75px;
+      left: 6px; }
+    .boxes-rounded__item-5:after {
+      content: "";
+      height: 1px;
+      width: 335px;
+      background: #fff;
+      position: absolute;
+      top: -75px;
+      left: 6px; }
+  .boxes-rounded__item-6 {
+    position: absolute;
+    top: 205px;
+    right: 230px; }
+    .boxes-rounded__item-6:before {
+      content: "";
+      height: 75px;
+      width: 1px;
+      background: #fff;
+      position: absolute;
+      top: -75px;
+      left: 6px; }
+    .boxes-rounded__item-6:after {
+      content: "";
+      height: 1px;
+      width: 335px;
+      background: #fff;
+      position: absolute;
+      top: -75px;
+      left: 6px; }
+  .boxes-rounded__item-7 {
+    position: absolute;
+    top: 225px;
+    right: 60px; }
+    .boxes-rounded__item-7:after {
+      content: "";
+      height: 1px;
+      width: 335px;
+      background: #fff;
+      position: absolute;
+      top: 7px;
+      left: 6px; }
+  .boxes-rounded__item-8 {
+    position: absolute;
+    top: 305px;
+    right: 130px; }
+    .boxes-rounded__item-8:before {
+      content: "";
+      height: 51px;
+      width: 1px;
+      background: #fff;
+      position: absolute;
+      top: 15px;
+      left: 7px; }
+    .boxes-rounded__item-8:after {
+      content: "";
+      height: 1px;
+      width: 335px;
+      background: #fff;
+      position: absolute;
+      top: 65px;
+      left: 7px; }
+  .boxes-rounded__item-9 {
+    position: absolute;
+    bottom: 95px;
+    left: 300px; }
+    .boxes-rounded__item-9:after {
+      content: "";
+      height: 1px;
+      width: 373px;
+      background: #20ab50;
+      position: absolute;
+      top: 8px;
+      left: 5px; }
 
 .boxes-right {
-  position: absolute;
-  right: 5%;
-  top: 20%; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 1; }
   .boxes-right__item {
-    margin-bottom: 12px; }
-
-.rounded {
-  position: absolute;
-  top: 25%;
-  left: 25%; }
-  .rounded__item_up {
-    width: 15px;
-    height: 15px;
-    background: #20ab50;
-    -webkit-border-radius: 50%;
-            border-radius: 50%; }
-  .rounded__item_down {
-    width: 23px;
-    height: 23px;
-    background: rgba(32, 171, 80, 0.5);
-    -webkit-border-radius: 50%;
-            border-radius: 50%; }
+    margin: 15px auto; }
 
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px) {
@@ -273,7 +442,9 @@ input, button {
   .drip-content__quote {
     margin: 40px auto; }
   .drip-content__name {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .boxes-rounded {
+    display: none; } }
 
 @media screen and (max-width: 1024px) {
   .intro-logo {
@@ -333,4 +504,12 @@ input, button {
   .reviews-content__quote {
     max-width: 300px; }
   .range-content img {
-    max-width: 320px; } }
+    max-width: 320px; }
+  .why-content__title {
+    padding-top: 30px; }
+  .boxes-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
