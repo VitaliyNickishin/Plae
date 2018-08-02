@@ -20,6 +20,9 @@ input, button
  outline: none
  border: 0
 
+a
+	text-decoration: none
+
 .stanrdart /*общее для секций*/
 	max-width: 1280px
 	height: auto
@@ -36,13 +39,13 @@ input, button
 	background: $menu-text
 	padding: 10px
 	border-radius: 10px
- &__title
-  font-size: 16px
-		font-weight: 400
-	&__text
+.boxes-title
+ font-size: 16px
+	font-weight: 400
+.boxes-text
   font-size: 15px
 
-.rounded
+.rounded /*круги для 6 section*/
 	width: 15px
 	height: 15px
 	box-shadow: 0 0 0 4px rgba(32, 171, 80, 0.5)
@@ -54,6 +57,7 @@ input, button
  	box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8)
 
 
+	
 /*Intro*/
 .intro
 	background: url(../img/stool.jpg) no-repeat center
@@ -363,19 +367,50 @@ input, button
 				position: absolute
 				top: 8px
 				left: 5px
-
-
-
 .boxes-right /*блок с правым контентом*/
 	flex: 1
 	z-index: 1
 	&__item
 		margin: 15px auto
 
-
-  
-
-
+/*Location-7 section*/
+.location
+	&-content
+  margin: 90px 0 75px
+  text-align: center
+		&__title
+			font-weight: 300
+		&__text
+   margin-top: 15px
+   font-size: 18px
+ &-boxes
+ 	margin-left: 115px
+ 	&__item
+   display: inline-block
+   width: 140px
+   margin: 0 80px 55px 0 
+ &-title
+ &-text
+ &-email
+ 	margin-top: 15px
+ 	a
+ 	 color: $email-color
+.contact
+ margin: 35px 0 75px
+	font-size: 18px
+	text-align: center
+ &__title
+  font-size: 24px
+  font-weight: 300  
+ &__text
+  margin: 15px 0 50px 
+ &__email
+  display: inline-block
+  a
+   color: $email-color 
+ &__tel  
+  display: inline-block
+  margin-left: 110px
 
 
 

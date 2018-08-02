@@ -18,6 +18,9 @@ input, button {
   outline: none;
   border: 0; }
 
+a {
+  text-decoration: none; }
+
 .stanrdart {
   max-width: 1280px;
   height: auto;
@@ -35,11 +38,13 @@ input, button {
   padding: 10px;
   -webkit-border-radius: 10px;
           border-radius: 10px; }
-  .boxes__title {
-    font-size: 16px;
-    font-weight: 400; }
-  .boxes__text {
-    font-size: 15px; }
+
+.boxes-title {
+  font-size: 16px;
+  font-weight: 400; }
+
+.boxes-text {
+  font-size: 15px; }
 
 .rounded {
   width: 15px;
@@ -409,6 +414,45 @@ input, button {
   .boxes-right__item {
     margin: 15px auto; }
 
+/*Location-7 section*/
+.location-content {
+  margin: 90px 0 75px;
+  text-align: center; }
+  .location-content__title {
+    font-weight: 300; }
+  .location-content__text {
+    margin-top: 15px;
+    font-size: 18px; }
+
+.location-boxes {
+  margin-left: 115px; }
+  .location-boxes__item {
+    display: inline-block;
+    width: 140px;
+    margin: 0 80px 55px 0; }
+
+.location-email {
+  margin-top: 15px; }
+  .location-email a {
+    color: #1faa50; }
+
+.contact {
+  margin: 35px 0 75px;
+  font-size: 18px;
+  text-align: center; }
+  .contact__title {
+    font-size: 24px;
+    font-weight: 300; }
+  .contact__text {
+    margin: 15px 0 50px; }
+  .contact__email {
+    display: inline-block; }
+    .contact__email a {
+      color: #1faa50; }
+  .contact__tel {
+    display: inline-block;
+    margin-left: 110px; }
+
 /* 961 - 1368 px */
 @media screen and (max-width: 1250px) {
   .about, .reviews, .drip {
@@ -468,7 +512,13 @@ input, button {
     .range-content__text {
       margin-bottom: 70px; }
     .range-content__ty {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+  .why-content__title {
+    padding-top: 30px; }
+  .location-content {
+    margin: 40px 0 30px; }
+  .location-boxes__item {
+    margin: 0 60px 40px 0; } }
 
 @media screen and (max-width: 320px) {
   .intro-logo {
@@ -512,4 +562,17 @@ input, button {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .location-boxes {
+    margin-left: 60px;
+    text-align: center; }
+  .contact {
+    margin: 5px 0 35px; }
+    .contact__text {
+      margin-bottom: 25px; }
+    .contact__email {
+      display: block;
+      margin: 0 auto; }
+    .contact__tel {
+      display: block;
+      margin: 0 auto; } }
