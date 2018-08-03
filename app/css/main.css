@@ -60,6 +60,18 @@ a {
     -webkit-box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8);
             box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8); }
 
+#scrollTop {
+  display: none;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  color: #20ab50;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; }
+
 /*Intro*/
 .intro {
   background: url(../img/stool.jpg) no-repeat center;
@@ -112,24 +124,26 @@ a {
     position: absolute;
     top: 50%;
     right: 5%;
-    width: 15px;
+    width: 12px;
     height: 150px;
     text-align: center; }
     .intro-nav li {
-      width: 8px;
-      height: 8px;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      background: #dcdcdc;
-      margin-bottom: 15px; }
-      .intro-nav li:hover {
-        width: 12px;
-        height: 12px;
-        -webkit-border-radius: 50%;
-                border-radius: 50%; }
+      display: inline-block; }
       .intro-nav li a {
         display: block;
-        text-decoration: none; }
+        text-decoration: none;
+        color: transparent;
+        width: 8px;
+        height: 8px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background: #dcdcdc;
+        margin-bottom: 15px; }
+        .intro-nav li a:hover {
+          width: 12px;
+          height: 12px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
 
 /*About-2 section*/
 .about, .reviews, .drip {
