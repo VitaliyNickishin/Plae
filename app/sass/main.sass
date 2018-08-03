@@ -56,7 +56,15 @@ a
  &_orange
  	box-shadow: 0 0 0 4px rgba(146, 93, 87, 0.8)
 
-
+#scrollTop /*стрелка прокрутки вверх*/
+	display: none
+	position: fixed
+	right: 5%
+	bottom: 5%
+	color: $bg-button
+	cursor: pointer
+	z-index: 2
+	transition: all 0.5s ease-in
 	
 /*Intro*/
 .intro
@@ -108,22 +116,24 @@ a
  	position: absolute
  	top: 50%
   right: 5%
-  width: 15px
+  width: 12px
   height: 150px
   text-align: center
  	li
- 		width: 8px
- 		height: 8px
- 		border-radius: 50%
- 		background: $bg-ellipse
-   margin-bottom: 15px
-   &:hover
-    	width: 12px
- 		  height: 12px
- 		  border-radius: 50%
+ 		display: inline-block
    a
     display: block
     text-decoration: none
+    color: transparent
+    width: 8px
+ 		 height: 8px
+ 		 border-radius: 50%
+ 		 background: $bg-ellipse
+    margin-bottom: 15px
+    &:hover
+    	width: 12px
+ 		  height: 12px
+ 		  border-radius: 50%
     
 /*About-2 section*/
 .about
