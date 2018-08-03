@@ -76,9 +76,10 @@
  		left: 15%
   &-nav
    li
-    width: 15px
-    height: 15px
-    margin-bottom: 20px
+    a
+     width: 15px
+     height: 15px
+     margin-bottom: 20px
 
  .about /*2 section*/
   &-content
@@ -136,12 +137,13 @@
   &-text
   &-email
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 640px)
  .about /*2 section*/
   &-content
    &__title
   img
-   //max-width: 400px
+   max-width: 400px
+
  .reviews /*3 section*/
   &-content
    &__title
@@ -151,15 +153,14 @@
    &__quote
    &__name
   img
-   
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 425px)
  .intro
   &-logo
    left: 50%
   &-main
    top: 60%
-   left: 88%
+   left: 68%
    &__title
     font-size: 40px
    p
@@ -177,9 +178,10 @@
    top: 15%
    right: 50%
    li
-    width: 18px
-    height: 18px
-    margin-bottom: 25px
+    a
+     width: 18px
+     height: 18px
+     margin-bottom: 25px
 
  .about /*2 section*/
   &-content
@@ -258,3 +260,32 @@
  .copy
   p
    text-align: center
+
+@media screen and (max-width: 375px)
+ .intro
+  &-logo
+  &-main
+   left: 77%
+   &__title
+   p
+    max-width: 360px
+  &-form
+   input
+   button
+  &-nav
+   li
+    a
+
+@media screen and (max-width: 320px)
+ .intro
+  &-logo
+  &-main
+   left: 88%
+   &__title
+   p
+  &-form
+   input
+   button
+  &-nav
+   li
+    a 

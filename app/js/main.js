@@ -2,9 +2,9 @@
 window.onscroll = function() {
    var scrollElem = document.getElementById("scrollTop");
    if (document.body.scrollTop > document.documentElement.clientHeight) {
-      scrollElem.style.display = "none";}
+      scrollElem.style.display = "block";}
     else {
-       scrollElem.style.display = "block";
+       scrollElem.style.display = "none";
    }
 };
 			var timeOut;
