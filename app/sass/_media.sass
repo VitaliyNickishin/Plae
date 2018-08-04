@@ -33,6 +33,10 @@
      margin-bottom: 20px
    img
     
+ .range /*5 section*/
+ .carousel-item
+  left: 23%
+
  .why /*6 section*/
   &-content
    &__title
@@ -70,6 +74,10 @@
   img
    margin-top: 20px
 
+ .range /*5 section*/
+ .carousel-item
+  left: 23%
+
 @media screen and (max-width: 768px)
  .intro /*1 section*/
  	&-logo
@@ -96,15 +104,15 @@
   img
  
  .range /*5 section*/
+  padding-top: 40px
   &-content
-   margin-top: 30px
    &__title
    &__text
-    margin-bottom: 70px
-   img
-   &__ty
-    margin-top: 50px
-   &__position
+    margin-bottom: 50px
+ .carousel-wrapper
+  top: -50px 
+ .carousel-item
+  left: 13%
 
  .why /*6 section*/
   &-content
@@ -153,6 +161,10 @@
    &__quote
    &__name
   img
+
+ .range /*5 section*/
+ .carousel-item
+  left: 5%
 
 @media screen and (max-width: 425px)
  .intro
@@ -209,10 +221,22 @@
   &-content
    &__title
    &__text
+    margin-bottom: 0
+ .carousel-wrapper
+  height: 452px
+  top: -30px
+ .carousel-item
+  left: 3%
+  &__img
+   line-height: 352px
    img
-    max-width: 320px
-   &__ty
-   &__position
+    max-width: 300px
+  &__content
+   h3
+   p
+ .arrow
+ .arrow-prev
+ .arrow-next
 
  .why /*6 section*/
   &-content
@@ -275,6 +299,26 @@
   &-nav
    li
     a
+ 
+ .range /*5 section*/
+  &-content
+   &__title
+   &__text
+ .carousel-wrapper
+  height: 352px
+ .carousel-item
+  &__img
+   line-height: 252px
+   img
+    max-width: 250px
+  &__content
+   h3
+   p
+ .arrow
+ .arrow-prev
+ .arrow-next
+
+
 
 @media screen and (max-width: 320px)
  .intro
@@ -289,3 +333,21 @@
   &-nav
    li
     a 
+
+ .range /*5 section*/
+  &-content
+   &__title
+   &__text
+ .carousel-wrapper
+  height: 302px
+ .carousel-item
+  &__img
+   line-height: 202px
+   img
+    max-width: 210px
+  &__content
+   h3
+   p
+ .arrow
+ .arrow-prev
+ .arrow-next
